@@ -1,0 +1,23 @@
+{% extends "./main.html" %}
+
+{% block content %}
+<section class="content">
+    <div class="container-fluid">
+        <form action="" method="post" id="form-delete-blacklist">
+            <div class="row form-group">
+                <label for="cpf">Remover CPF da Blacklist</label>
+                <input type="input" class="form-control" name="cpf" id="cpf" maxlength="14" placeholder="999.999.999-74">
+            </div>
+            <button type="submit" class="btn btn-default" style="margin: -10px">Remover</button>
+        </form>
+    </div>
+</section>
+<script>
+    $("#cpf").change(function() {
+        var action_form = '/blacklist/del/';
+        $("#form-delete-blacklist").attr('action', action_form+$(this).val());
+
+        console.log($("#form-delete-blacklist").attr('action'));
+    });
+</script>
+{% endblock content %}

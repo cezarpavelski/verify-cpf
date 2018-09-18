@@ -1,0 +1,11 @@
+{
+  "name": "Broadcast",
+  "version": "0.0.1",
+  "description": "Broadcast",
+  "private": true,
+  "devDependencies": {},
+  "dependencies": {
+    "redis": "^2.8.0",
+    "socket.io": "^2.1.0"
+  }
+}

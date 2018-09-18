@@ -1,0 +1,76 @@
+add-cpf:
+    path:     /blacklist/cpf/add
+    defaults: { _controller: '\App\Controllers\BlacklistCpf::add' }
+    methods: [POST]
+    options:
+        utf8: true
+
+remove-cpf:
+    path:     /blacklist/cpf/{cpf}/remove
+    defaults: { _controller: '\App\Controllers\BlacklistCpf::remove' }
+    methods: [DELETE]
+    options:
+        utf8: true
+
+verify-cpf:
+    path:     /blacklist/cpf/{cpf}/verify
+    defaults: { _controller: '\App\Controllers\BlacklistCpf::verify' }
+    methods: [GET]
+    options:
+        utf8: true
+
+status:
+    path:     /status
+    defaults: { _controller: '\App\Controllers\Suport::status' }
+    methods: [GET]
+    options:
+        utf8: true
+
+home:
+    path:     /
+    defaults: { _controller: '\App\Controllers\BlacklistCpf::viewList' }
+    methods: [GET]
+    options:
+        utf8: true
+
+view-list:
+    path:     /blacklist/list
+    defaults: { _controller: '\App\Controllers\BlacklistCpf::viewList' }
+    methods: [GET]
+    options:
+        utf8: true
+
+view-add:
+    path:     /blacklist/add
+    defaults: { _controller: '\App\Controllers\BlacklistCpf::viewAdd' }
+    methods: [GET]
+    options:
+        utf8: true
+
+view-del:
+    path:     /blacklist/del
+    defaults: { _controller: '\App\Controllers\BlacklistCpf::viewDel' }
+    methods: [GET]
+    options:
+        utf8: true
+
+view-verify:
+    path:     /blacklist/verify
+    defaults: { _controller: '\App\Controllers\BlacklistCpf::viewVerify' }
+    methods: [GET]
+    options:
+        utf8: true
+
+remove-cpf-view:
+    path:     /blacklist/del/{cpf}
+    defaults: { _controller: '\App\Controllers\BlacklistCpf::remove' }
+    methods: [POST]
+    options:
+        utf8: true
+
+add-cpf-view:
+    path:     /blacklist/add
+    defaults: { _controller: '\App\Controllers\BlacklistCpf::add' }
+    methods: [POST]
+    options:
+        utf8: true

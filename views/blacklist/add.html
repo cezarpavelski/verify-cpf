@@ -1,0 +1,15 @@
+{% extends "./main.html" %}
+
+{% block content %}
+<section class="content">
+    <div class="container-fluid">
+        <form action="/blacklist/add" method="post">
+            <div class="row form-group">
+                <label for="cpf">Adicionar CPF na Blacklist</label>
+                <input type="input" class="form-control" name="cpf" maxlength="14" placeholder="999.999.999-74">
+            </div>
+            <button type="submit" class="btn btn-default" style="margin: -10px">Adicionar</button>
+        </form>
+    </div>
+</section>
+{% endblock content %}
